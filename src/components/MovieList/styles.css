@@ -1,0 +1,35 @@
+.moviesContainer {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23vw, 1fr));
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.movieCard{
+    padding-bottom: 15px;
+    width: 23vw;
+    max-width: 360px;
+    border: 1px solid rgba(0,0,0,0.23);
+}
+
+.movieCard:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.movieCardImage {
+    width: 100%;
+    height: 50vh;
+    max-height: 370px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 481px) {
+    .moviesContainer { 
+        grid-template-columns: auto;
+    }
+
+    .movieCard {
+        width: 100%;
+    }    
+}
